@@ -32,7 +32,7 @@
       sistemaSolar[7] = "Neptuno";
 
       //Creación de un Array mediante un constructor
-      let sistemaSolar2 = newArray(
+      let sistemaSolar2 = new Array(
         "Mercurio",
         "Venus",
         "Tierra",
@@ -54,10 +54,12 @@
       ];
 
       //Creación de un array mixto (objeto literal)
-      let datos = { "numero": 42, 
-                    "mes": "Junio", 
-                    "hola": "mundo",
+      let datos = { "Nombre": "Laura", 
+                    "Edad": 23, 
+                    "Fecha de Nacimiento": "15/01/2001",
                      69: "96" };
+    
+    document.write("<br/>" + datos["Nombre"] + "--" + datos["Edad"] + "--" + datos["Fecha de Nacimiento"] + "--" + datos[69] + "<br/>");
     </script>
   </body>
 </html>
