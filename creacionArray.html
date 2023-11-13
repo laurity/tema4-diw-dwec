@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creación de un Array en JS</title>
+  </head>
+  <body>
+    <script>
+      let miArray = new Array();
+
+      let longitudArray = miArray.length;
+
+      let personas = new Array(40);
+
+      //Aunque arriba hemos declarado 40 posiciones, al ser dinamicos los arrays en js,
+      //podemos luego introducir valores en cualquier posicion
+
+      personas[53] = "Irene Sáix Veiga";
+
+      let nuevaLongitud = personas.lengt;
+
+      let sistemaSolar = new Array();
+
+      sistemaSolar[0] = "Mercurio";
+      sistemaSolar[1] = "Venus";
+      sistemaSolar[2] = "Tierra";
+      sistemaSolar[3] = "Marte";
+      sistemaSolar[4] = "Jupiter";
+      sistemaSolar[5] = "Saturno";
+      sistemaSolar[6] = "Urano";
+      sistemaSolar[7] = "Neptuno";
+
+      //Creación de un Array mediante un constructor
+      let sistemaSolar2 = newArray(
+        "Mercurio",
+        "Venus",
+        "Tierra",
+        "Marte",
+        "Jupiter",
+        "Saturno",
+        "Urano",
+        "Neptuno"
+      );
+
+      //Creación de un array de forma literal (recomendada)
+      let sistemaSolarLiteral = [
+        "Mercurio",
+        "Venus",
+        "Tierra",
+        "Marte",
+        "Urano",
+        "Neptuno",
+      ];
+
+      //Creación de un array mixto (objeto literal)
+      let datos = { "numero": 42, 
+                    "mes": "Junio", 
+                    "hola": "mundo",
+                     69: "96" };
+    </script>
+  </body>
+</html>
