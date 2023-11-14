@@ -15,17 +15,18 @@
         let alumnos = [24,17,28,26];
  
         //para reutilizar la impresion de arrays, es decir hacemos un metodo que imprima como en java
-        function imprimeDAtos(indice) {
+        function imprimeDatos(indice) {
             document.write("<br/>" +profesores[indice]+ " del módulo de " + asignaturas[indice] + ", tiene " + alumnos[indice] + " alumnos en clase");
         }
-        document.write("<b>Informacion de Profesores, Asignaturas y Alumnos: </b>");
-       for (let i = 0; i < profesores.length; i++) {
-         imprimeDAtos([i])
-         imprimeDAtos([i])
-       }
-       const imprimeDatosFlecha = indice =>{
+        const imprimeDatosFlecha = indice =>{
         document.write("<br/>" +profesores[indice]+ " del módulo de " + asignaturas[indice] + ", tiene " + alumnos[indice] + " alumnos en clase");
        }
+        document.write("<b>Informacion de Profesores, Asignaturas y Alumnos: </b>");
+       for (let i = 0; i < profesores.length; i++) {
+         imprimeDatos([i])
+         imprimeDatosFlecha([i])
+       }
+       
     </script>
 </body>
  
