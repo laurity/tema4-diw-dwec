@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recorrido de un Array en Javascript</title>
+  </head>
+  <body>
+    <script>
+      let sistemaSolar = new Array();
+      sistemaSolar[0] = "Mercurio";
+      sistemaSolar[1] = "Venus";
+      sistemaSolar[2] = "Tierra";
+      sistemaSolar[3] = "Marte";
+      sistemaSolar[4] = "Jupiter";
+      sistemaSolar[5] = "Saturno";
+      sistemaSolar[6] = "Urano";
+      sistemaSolar[7] = "Neptuno";
+
+      document.write("<strong> Recorrido de un bucle for:</strong>");
+      for (let i = 0; i < sistemaSolar.length; i++) {
+        document.write(sistemaSolar[i] + "<br>");
+      }
+
+      let j = 0;
+
+      while(j < sistemaSolar.length){
+        document.write(sistemaSolar[j] + "<br>");
+        j++;
+      }
+
+      sistemaSolar.forEach(planeta =>{
+        document.write(planeta + "<br>")
+      })
+
+      let sistemaSolarLiteral = ["Mercurio", "Venus", "Tierra", "Marte", "Jupiter", "Saturno", "Urano","Neptuno"];
+    </script>
+  </body>
+</html>

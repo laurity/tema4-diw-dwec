@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodos Array</title>
+</head>
+<body>
+    <script>
+        let frutas = ["Plátano", "Naranja", "Manzana", "Melocotón"];
+        document.write("<strong>Metodo reverse():</strong></br>");
+        //Muestra los datos del arrat, al revés.
+        document.write(frutas.reverse() + "</br>");
+
+        let frutasSlice = ["Plátano", "Naranja", "Manzana", "Melocotón"];
+        document.write("<strong>Metodo slice():</strong></br>");
+        document.write(frutasSlice.slice(0, 1) + "</br>"); //Imprime: plátano
+        document.write(frutasSlice.slice(1) + "</br>"); //Imprime: Naranja, Manzana, Melocotón
+        document.write(frutasSlice.slice(-2) + "</br>"); //Imprime los dos últimos. Manzana, Melocotón
+        document.write(frutasSlice + "</br>"); 
+    </script>
+</body>
+</html>
