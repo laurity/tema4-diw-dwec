@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays Paralelos en JavaScript</title>
+</head>
+ 
+<body>
+    <!--El array paralelo esta centrado en la reutilizacion de un array. como el toString-->
+    <script>
+        let profesores = ["Cristina", "Catalina", "Vietes", "Bejamín"];
+        let asignaturas = ["Seguridad","Base de Datos","Sistemas Informáticos", "Redes"];
+        let alumnos = [24,17,28,26];
+ 
+        //para reutilizar la impresion de arrays, es decir hacemos un metodo que imprima como en java
+        function imprimeDAtos(indice) {
+            document.write("<br/>" +profesores[indice]+ " del módulo de " + asignaturas[indice] + ", tiene " + alumnos[indice] + " alumnos en clase");
+        }
+        document.write("<b>Informacion de Profesores, Asignaturas y Alumnos: </b>");
+       for (let i = 0; i < profesores.length; i++) {
+         imprimeDAtos([i])
+         imprimeDAtos([i])
+       }
+       const imprimeDatosFlecha = indice =>{
+        document.write("<br/>" +profesores[indice]+ " del módulo de " + asignaturas[indice] + ", tiene " + alumnos[indice] + " alumnos en clase");
+       }
+    </script>
+</body>
+ 
+</html>
