@@ -13,6 +13,25 @@
             ["Vieites", "Sistemas Informáticos", 28],
             ["Benjamin", "Redes", 26]
         ]
+
+        document.write("<b>Información de Profesorado, Asignaturas y Alumnos (Array Multidimensional)</b>")
+        for (let i = 0; i < datos.length; i++) {
+            document.write("<br>" + datos[i][0] + " del módulo de " + datos[i][1] +
+             ", tiene " + datos[i][2] + " alumnos en clase")
+        }
+
+        //Imprimir información del array multidimensional en una tabla
+        document.write("<br><br><strong>Informacion de la tabla</strong><br>");
+        document.write("<table border='1'>");
+            for (let i = 0; i < datos.length; i++) {
+                document.write("<tr>")
+                    for (let j = 0; j < datos[i].length; j++) {
+                        document.write("<td>" + datos[i][j] + "</td>");                        
+                    }
+                document.write("</tr>")
+            }
+
+            document.write("</table>")
     </script>
 </body>
 </html>
